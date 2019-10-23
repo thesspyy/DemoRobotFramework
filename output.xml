@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.1 on win32)" generated="20191023 16:32:36.936" rpa="false">
+<suite id="s1" name="Test" source="D:\603020753-5\Lab12\test.robot">
+<test id="s1-t1" name="Go To homepage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20191023 16:32:37.048" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'.</msg>
+<status status="PASS" starttime="20191023 16:32:37.048" endtime="20191023 16:32:40.878"></status>
+</kw>
+<kw name="Input cs">
+<arguments>
+<arg>${CS URL}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>q</arg>
+<arg>${input}</arg>
+</arguments>
+<msg timestamp="20191023 16:32:40.879" level="INFO">Typing text 'http://www.cs.kku.ac.th' into text field 'q'.</msg>
+<status status="PASS" starttime="20191023 16:32:40.879" endtime="20191023 16:32:40.992"></status>
+</kw>
+<status status="PASS" starttime="20191023 16:32:40.879" endtime="20191023 16:32:40.992"></status>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20191023 16:32:40.993" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20191023 16:32:40.993" endtime="20191023 16:32:41.797"></status>
+</kw>
+<status status="PASS" starttime="20191023 16:32:37.047" endtime="20191023 16:32:41.797" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191023 16:32:36.937" endtime="20191023 16:32:41.798"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
