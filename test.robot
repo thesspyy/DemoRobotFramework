@@ -11,6 +11,7 @@ Go To homepage
     Open Browser    ${HOMEPAGE}    ${BROWSER}
     Input cs    ${CS URL}
 	Submit Form
+	Wait Until Page Contains    CS KKU
 	
 	
 *** Keywords ***

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1 (Python 3.7.1 on win32)" generated="20191023 16:32:36.936" rpa="false">
+<robot generator="Robot 3.1 (Python 3.7.1 on win32)" generated="20191023 16:56:25.127" rpa="false">
 <suite id="s1" name="Test" source="D:\603020753-5\Lab12\test.robot">
 <test id="s1-t1" name="Go To homepage">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,8 +8,8 @@
 <arg>${HOMEPAGE}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20191023 16:32:37.048" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'.</msg>
-<status status="PASS" starttime="20191023 16:32:37.048" endtime="20191023 16:32:40.878"></status>
+<msg timestamp="20191023 16:56:25.248" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'.</msg>
+<status status="PASS" starttime="20191023 16:56:25.248" endtime="20191023 16:56:29.291"></status>
 </kw>
 <kw name="Input cs">
 <arguments>
@@ -21,19 +21,26 @@
 <arg>q</arg>
 <arg>${input}</arg>
 </arguments>
-<msg timestamp="20191023 16:32:40.879" level="INFO">Typing text 'http://www.cs.kku.ac.th' into text field 'q'.</msg>
-<status status="PASS" starttime="20191023 16:32:40.879" endtime="20191023 16:32:40.992"></status>
+<msg timestamp="20191023 16:56:29.292" level="INFO">Typing text 'http://www.cs.kku.ac.th' into text field 'q'.</msg>
+<status status="PASS" starttime="20191023 16:56:29.291" endtime="20191023 16:56:29.405"></status>
 </kw>
-<status status="PASS" starttime="20191023 16:32:40.879" endtime="20191023 16:32:40.992"></status>
+<status status="PASS" starttime="20191023 16:56:29.291" endtime="20191023 16:56:29.405"></status>
 </kw>
 <kw name="Submit Form" library="SeleniumLibrary">
 <doc>Submits a form identified by ``locator``.</doc>
-<msg timestamp="20191023 16:32:40.993" level="INFO">Submitting form 'None'.</msg>
-<status status="PASS" starttime="20191023 16:32:40.993" endtime="20191023 16:32:41.797"></status>
+<msg timestamp="20191023 16:56:29.405" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20191023 16:56:29.405" endtime="20191023 16:56:30.447"></status>
 </kw>
-<status status="PASS" starttime="20191023 16:32:37.047" endtime="20191023 16:32:41.797" critical="yes"></status>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>CS KKU</arg>
+</arguments>
+<status status="PASS" starttime="20191023 16:56:30.447" endtime="20191023 16:56:30.472"></status>
+</kw>
+<status status="PASS" starttime="20191023 16:56:25.247" endtime="20191023 16:56:30.473" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20191023 16:32:36.937" endtime="20191023 16:32:41.798"></status>
+<status status="PASS" starttime="20191023 16:56:25.128" endtime="20191023 16:56:30.475"></status>
 </suite>
 <statistics>
 <total>
